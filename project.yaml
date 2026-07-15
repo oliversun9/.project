@@ -1,0 +1,73 @@
+# .project metadata for Connect RPC
+# Documentation: https://github.com/cncf/automation/tree/main/utilities/dot-project
+
+# TODO: Set slack_channels
+# TODO: Add adopters list (ADOPTERS.md)
+# TODO: Add package_managers if distributed via registries
+
+schema_version: "1.0.0"
+slug: "connect"
+name: "Connect RPC"
+description: "Connect is a family of libraries for building browser and gRPC-compatible HTTP APIs."
+type: "project"
+project_lead: "akshayjshah" # TODO: AUTO-DETECTED — please verify
+# TODO: Set CNCF Slack channel(s)
+# slack_channels:
+#   - name: "#connect"
+#     primary: true
+
+maturity_log:
+  - phase: "sandbox"
+    date: "2024-04-13T00:00:00Z"
+    issue: "https://github.com/cncf/sandbox/issues/63" # TODO: AUTO-DETECTED — please verify
+
+repositories:
+  - "https://github.com/connectrpc/connect-go"
+
+website: "https://connectrpc.com/"
+
+artwork: "https://landscape.cncf.io/logos/connect-rpc.svg"
+
+# TODO: Add ADOPTERS.md if your project tracks adopters
+# adopters:
+#   path: "https://github.com/connectrpc/connect-go/blob/main/ADOPTERS.md"
+
+
+# TODO: Add package manager identifiers if your project is distributed via registries
+# package_managers:
+#   docker: "connectrpc/connect-go"
+
+social:
+  twitter: "https://twitter.com/connectrpc"
+
+security:
+  policy:
+    path: "https://github.com/connectrpc/connect-go/blob/main/SECURITY.md"
+  contact:
+    advisory_url: "https://github.com/connectrpc/connect-go/security/advisories/new"
+
+governance:
+  contributing:
+    path: "https://github.com/connectrpc/connect-go/blob/main/.github/CONTRIBUTING.md"
+  code_of_conduct:
+    path: "https://github.com/connectrpc/connect-go/blob/main/.github/CODE_OF_CONDUCT.md"
+
+legal:
+  license:
+    path: "https://github.com/connectrpc/connect-go/blob/main/LICENSE"
+  identity_type:
+    has_dco: true # AUTO-DETECTED — please verify
+    has_cla: false # AUTO-DETECTED — please verify
+    dco_url:
+      path: "https://developercertificate.org/"
+
+documentation:
+  readme:
+    path: "https://github.com/connectrpc/connect-go/blob/main/README.md"
+
+landscape:
+  category: "Orchestration & Management"
+  subcategory: "Remote Procedure Call"
+
+# CLOMonitor Score: 72/100
+# Documentation: 80 | License: 75 | Best Practices: 53 | Security: 68
