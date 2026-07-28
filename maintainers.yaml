@@ -9,7 +9,6 @@ maintainers:
     teams:
       - name: "project-maintainers"
         members:
-          - akshayjshah
           - eseay
           - emcfarlane
           - jhump
@@ -20,3 +19,8 @@ maintainers:
           - srikrsna-buf
           - smaye81
           - timostamm
+          - ajeetdsouza
+          - anuraaga
+          - spenczar
+          - stefanvanburen
+          - i2y
