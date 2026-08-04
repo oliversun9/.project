@@ -64,8 +64,6 @@ package_managers:
 security:
   policy:
     path: "https://github.com/connectrpc/connect-go/blob/main/SECURITY.md"
-  contact:
-    advisory_url: "https://github.com/connectrpc/connect-go/security/advisories/new"
 
 governance:
   contributing:
