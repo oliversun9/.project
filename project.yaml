@@ -1,69 +1,88 @@
 # .project metadata for Connect RPC
 # Documentation: https://github.com/cncf/automation/tree/main/utilities/dot-project
 
-# TODO: Set slack_channels
-# TODO: Add adopters list (ADOPTERS.md)
-# TODO: Add package_managers if distributed via registries
-
 schema_version: "1.0.0"
 slug: "connect"
 name: "Connect RPC"
 description: "Connect is a family of libraries for building browser and gRPC-compatible HTTP APIs."
 type: "project"
-project_lead: "akshayjshah" # TODO: AUTO-DETECTED — please verify
-# TODO: Set CNCF Slack channel(s)
-# slack_channels:
-#   - name: "#connect"
-#     primary: true
+project_lead: "bufdev"
+slack_channels:
+  - name: "#connectrpc"
+    primary: true
 
 maturity_log:
   - phase: "sandbox"
     date: "2024-04-13T00:00:00Z"
-    issue: "https://github.com/cncf/sandbox/issues/63" # TODO: AUTO-DETECTED — please verify
+    issue: "https://github.com/cncf/sandbox/issues/63"
 
 repositories:
+  # Main libraries and plugins
   - "https://github.com/connectrpc/connect-go"
+  - "https://github.com/connectrpc/connect-es"
+  - "https://github.com/connectrpc/connect-swift"
+  - "https://github.com/connectrpc/connect-kotlin"
+  - "https://github.com/connectrpc/connect-dart"
+  - "https://github.com/connectrpc/connect-py"
+  - "https://github.com/connectrpc/connect-rust"
+  # Supporting libraries
+  - "https://github.com/connectrpc/authn-go"
+  - "https://github.com/connectrpc/connect-playwright-es"
+  - "https://github.com/connectrpc/connect-query-es"
+  - "https://github.com/connectrpc/cors-go"
+  - "https://github.com/connectrpc/grpchealth-go"
+  - "https://github.com/connectrpc/grpcreflect-es"
+  - "https://github.com/connectrpc/grpcreflect-go"
+  - "https://github.com/connectrpc/otelconnect-go"
+  - "https://github.com/connectrpc/validate-es"
+  - "https://github.com/connectrpc/validate-go"
+  - "https://github.com/connectrpc/vanguard-go"
+  # Tooling, docs, and examples
+  - "https://github.com/connectrpc/conformance"
+  - "https://github.com/connectrpc/awesome-connect"
+  - "https://github.com/connectrpc/base-workflows"
+  - "https://github.com/connectrpc/connectrpc.com"
+  - "https://github.com/connectrpc/envoy-demo"
+  - "https://github.com/connectrpc/examples-es"
+  - "https://github.com/connectrpc/examples-go"
 
 website: "https://connectrpc.com/"
 
 artwork: "https://landscape.cncf.io/logos/connect-rpc.svg"
 
-# TODO: Add ADOPTERS.md if your project tracks adopters
-# adopters:
-#   path: "https://github.com/connectrpc/connect-go/blob/main/ADOPTERS.md"
-
-
-# TODO: Add package manager identifiers if your project is distributed via registries
-# package_managers:
-#   docker: "connectrpc/connect-go"
-
-social:
-  twitter: "https://twitter.com/connectrpc"
+package_managers:
+  go: "connectrpc.com/connect" # connect-go
+  npm: "@connectrpc/connect" # connect-es
+  maven: "com.connectrpc:connect-kotlin" # connect-kotlin
+  # Swift Package Manager resolves packages by git URL; the CocoaPods pod is
+  # discontinued (https://github.com/connectrpc/connect-swift/pull/414).
+  swift: "https://github.com/connectrpc/connect-swift" # connect-swift
+  pub: "connectrpc" # connect-dart
+  pypi: "connectrpc" # connect-py
+  crates: "connectrpc" # connect-rust
 
 security:
   policy:
-    path: "https://github.com/connectrpc/connect-go/blob/main/SECURITY.md"
-  contact:
-    advisory_url: "https://github.com/connectrpc/connect-go/security/advisories/new"
+    path: "https://github.com/connectrpc/connectrpc.com/blob/main/SECURITY.md"
 
 governance:
   contributing:
-    path: "https://github.com/connectrpc/connect-go/blob/main/.github/CONTRIBUTING.md"
+    path: "https://github.com/connectrpc/connectrpc.com/blob/main/.github/CONTRIBUTING.md"
   code_of_conduct:
-    path: "https://github.com/connectrpc/connect-go/blob/main/.github/CODE_OF_CONDUCT.md"
+    path: "https://github.com/connectrpc/connectrpc.com/blob/main/.github/CODE_OF_CONDUCT.md"
 
 legal:
   license:
-    path: "https://github.com/connectrpc/connect-go/blob/main/LICENSE"
+    path: "https://github.com/connectrpc/connectrpc.com/blob/main/LICENSE"
   identity_type:
-    has_dco: true # AUTO-DETECTED — please verify
-    has_cla: false # AUTO-DETECTED — please verify
+    has_dco: true
+    has_cla: false
     dco_url:
       path: "https://developercertificate.org/"
 
 documentation:
   readme:
-    path: "https://github.com/connectrpc/connect-go/blob/main/README.md"
+    path: "https://github.com/connectrpc/connectrpc.com/blob/main/README.md"
 
 landscape:
   category: "Orchestration & Management"
