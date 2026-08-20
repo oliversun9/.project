@@ -31,7 +31,6 @@ repositories:
   - "https://github.com/connectrpc/connect-query-es"
   - "https://github.com/connectrpc/cors-go"
   - "https://github.com/connectrpc/grpchealth-go"
-  - "https://github.com/connectrpc/grpcreflect-es"
   - "https://github.com/connectrpc/grpcreflect-go"
   - "https://github.com/connectrpc/otelconnect-go"
   - "https://github.com/connectrpc/validate-es"
